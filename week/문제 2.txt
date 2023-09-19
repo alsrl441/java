@@ -1,0 +1,29 @@
+(1)
+
+public class SampleProgram {
+  public static void main(String[] args) {
+    int i;
+    int j;
+    i = 10;
+    j = 20;
+    System.out.println(i + j);
+  }
+}
+
+
+
+(2)
+
+SampleProgram
+
+
+
+(3)
+
+javac SampleProgram.java
+
+
+
+(4)
+
+java SampleProgram
