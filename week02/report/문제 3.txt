@@ -1,3 +1,0 @@
-int %j;
-char 안녕;
-double 1var;
