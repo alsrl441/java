@@ -3,7 +3,7 @@
 <p>확인하시기 전에 알려드릴 부분이 있어 글을 남깁니다.</p>
 <br>
 <br>
-<p>1주차 레포트는 다른 레파지토리에서 업로드하였다가 새 레파지토리를 생성하여 업로드 날짜 확인을 위해 주소를 올립니다. [1주차](https://www.google.co.kr/https://github.com/alsrl441/java.github.io){:target="_blank"}<a href="https://github.com/alsrl441/java.github.io" target="_">1주차</a></p>
+<p>1주차 레포트는 다른 레파지토리에서 업로드하였다가 새 레파지토리를 생성하여 업로드 날짜 확인을 위해 주소를 올립니다. [https://www.google.co.kr/https://github.com/alsrl441/java.github.io){:target="_blank"](} <a href="https://github.com/alsrl441/java.github.io" target="_">1주차</a></p>
 
 <br>
 <br>
