@@ -17,12 +17,11 @@ public class Practice2_11_1 {
 			System.out.println("여름");
 		} else if (month >= 9 && month <= 11) {
 			System.out.println("가을");
-		} else {
+		} else if (month == 12 || month >= 1 && month <= 2){
 			System.out.println("겨울");
+		} else {
+			System.out.println("잘못입력.");
 		}
-		
-		
-		
-		
+
 	}
 }
