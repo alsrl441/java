@@ -2,7 +2,7 @@ package practice;
 
 import java.util.Scanner;
 
-public class IntegerDiscrimination {
+public class Practice2_2 {
 	public static void main(String[] args) {
 		int i;
 		
