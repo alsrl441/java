@@ -2,7 +2,7 @@ package practice;
 
 import java.util.Scanner;
 
-public class CurrencyExchange {
+public class Practice2_1 {
 	public static void main(String[] args) {
 		int won;
 		double dollar;
