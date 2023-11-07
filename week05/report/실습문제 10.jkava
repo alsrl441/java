@@ -39,7 +39,7 @@ public class DicApp {
     }
     
     public static void main(String[] args) {
-        DicApp dicApp = new num_10();
+        DicApp dicApp = new DicApp();
         dicApp.run();
     }
 }
