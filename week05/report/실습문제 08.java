@@ -2,7 +2,7 @@
 import java.util.Scanner;
  
 class Phone {
-    private String name = null;
+    private String name = null; 
     private String tel = null;
     
     public Phone() {}
