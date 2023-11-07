@@ -1,10 +1,10 @@
 import java.util.Scanner;
  
-public class num_3 {
+public class Num3 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.print("정수를 입력하시오>> ");
-        int num = sc.nextInt();
+        int num = scanner.nextInt();
         
         for(int i=1;i<=num;i++) {
             for(int j=num;j>=i;j--) {
