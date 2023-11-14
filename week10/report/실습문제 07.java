@@ -16,7 +16,7 @@ class Point3D extends Point{
     public String toString() {return "(" + getX() + "," + getY() + "," + z +")의 점";}
 }
  
-public class num_7 {
+public class Num7 {
     public static void main(String[] args) {
         Point3D p = new Point3D(1, 2, 3);
         System.out.println(p.toString() + "입니다.");
