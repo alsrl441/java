@@ -56,7 +56,7 @@ class Dictionary extends PairMap{
     public int length() {return count;}
 }
  
-public class num_10 {
+public class Num10 {
     public static void main(String[] args) {
         Dictionary dic = new Dictionary(10);
         dic.put("황기태", "자바");
