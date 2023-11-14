@@ -22,7 +22,7 @@ class ColorPoint extends Point{
     }
 }
  
-public class num_6 {
+public class Num6 {
     public static void main(String[] args) {
         ColorPoint zeroPoint = new ColorPoint();
         System.out.println(zeroPoint.toString() + "입니다.");
