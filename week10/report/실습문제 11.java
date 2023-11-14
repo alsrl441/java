@@ -25,7 +25,7 @@ class Div extends Calc{
     public int calculate() {return a/b;}
 }
  
-public class num_11 {
+public class Num11 {
     public void run() {
         Scanner sc = new Scanner(System.in);
         System.out.print("두 정수와 연산자를 입력하시오>> ");
