@@ -14,12 +14,9 @@ class StringStack implements Stack{
     private int top =0;
     
     public StringStack(int number) {Stack = new String[number];}
-    // 현재 스택에 저장된 개수 리턴
     public int length() {return top;}
-    // 전체 저장 가능한 개수 리턴
     public int capacity() {return Stack.length;}
     
-    // 스택의 톱(top)에 실수 저장
     public String pop() {
         if(top==0) {
             return "빈 상태";
@@ -30,7 +27,6 @@ class StringStack implements Stack{
             return stay;
         }
     }
-    // 스택의 톱(top)에 저장된 실수 리턴
     public boolean push(String val) {
         if (top==Stack.length) {
             return false;
@@ -44,7 +40,7 @@ class StringStack implements Stack{
  
 }
  
-public class num_9 {
+public class Num9 {
     public void run() {
         Scanner sc = new Scanner(System.in);
         System.out.print("총 스택 저장 공간의 크기 입력 >> ");
