@@ -22,7 +22,7 @@ class PositivePoint extends Point{
     public String toString() {return "(" + getX() + "," + getY() + ")의 점";}
 }
  
-public class num_8 {
+public class Num8 {
     public static void main(String[] args) {
         PositivePoint p = new PositivePoint();
         p.move(10, 10);
