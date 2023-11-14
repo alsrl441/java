@@ -33,7 +33,7 @@ class ColorPoint extends Point{
     }
 }
  
-public class num_5 {
+public class Num5 {
     public static void main(String[] args) {
         ColorPoint cp = new ColorPoint(5, 5, "YELLOW");
         cp.setXY(10, 20);
