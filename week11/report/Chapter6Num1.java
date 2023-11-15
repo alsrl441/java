@@ -13,6 +13,14 @@ class MyPoint {
 	public String toString() {
 		return "Point(" + x + "," + y + ")";
 	}
+	
+	public boolean equals(Object obj) {
+		MyPoint p = (MyPoint)obj;
+		if(x == p.x && y == p.y)
+			return true;
+		else
+			return false;
+	}
 }
 
 public class Capter6Num1 {
