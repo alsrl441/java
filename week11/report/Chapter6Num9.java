@@ -21,7 +21,7 @@ class Computer extends Player {
 		return (int)(Math.random() * 3 + 1); // 1부터 3까지의 수
 	}	
 }
-public class Kawibawibo {
+public class Chapter6Num9 {
 	private final String s[] = {"가위", "바위", "보"};
 	private Player [] players = new Player[2];
 	public Kawibawibo() {
@@ -62,7 +62,7 @@ public class Kawibawibo {
 	}
 	
 	public static void main (String[] args) {
-		Kawibawibo game = new Kawibawibo();
+		Chapter6Num9 game = new Chapter6Num9();
 		game.run();
 	}
 }
