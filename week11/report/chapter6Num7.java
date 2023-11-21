@@ -1,7 +1,8 @@
 (2)
 
-import java.util.*;
-public class WordCount {
+import java.util.Scanner;
+
+public class chapter6Num7 {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		while(true) {
@@ -21,8 +22,9 @@ public class WordCount {
 
 (2)
 
-import java.util.*;
-public class WordCount {
+import java.util.Scanner;
+
+public class chapter6Num7 {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		while(true) {
