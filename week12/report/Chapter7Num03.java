@@ -2,7 +2,7 @@ package practice;
 
 import java.util.*;
 
-public class Chapter7Num3 {
+public class Chapter7Num03 {
 	public static void main(String[] args) {
 		HashMap<String, Integer> nations = new HashMap<String, Integer>();
 		Scanner sc = new Scanner(System.in);
