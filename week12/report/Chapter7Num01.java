@@ -2,7 +2,7 @@ package practice;
 
 import java.util.*;
 
-public class Chapter7Num1 {
+public class Chapter7Num01 {
 	public static void main(String[] args) {
 		Vector<Integer> v = new Vector<Integer>();
 		Scanner sc = new Scanner(System.in);
