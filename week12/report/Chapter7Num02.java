@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Chapter7Num2 {
+public class Chapter7Num02 {
 	public static void main(String[] args) {
 		ArrayList<Character> a = new ArrayList<Character>();
 		Scanner sc = new Scanner(System.in);
