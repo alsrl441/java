@@ -1,8 +1,9 @@
 
 package chapter7;
+
 import java.util.*;
 
-public class Chapter7Num4 {
+public class Chapter7Num04 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		Vector<Integer> pre = new Vector<Integer>();
