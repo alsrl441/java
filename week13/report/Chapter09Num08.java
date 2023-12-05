@@ -1,86 +1,57 @@
 package practice;
 
 import java.awt.*;
-import java.util.*;
 import javax.swing.*;
 
-public class Chapter09Num08 extends JFrame implements ActionListener{
-	String[] str = {"CE", "계산", "+", "-", "x", "%"};
-	JTextField tf1, tf2;
-	String numStr="";
 
-	public Chapter09Num08() {
-		setTitle("계산기프레임");
-		setSize(300, 300);
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
-		Container c = getContentPane();
-		JPanel pn = new JPanel();
-		JPanel ps = new JPanel();
-		JPanel pc = new JPanel();
-
-		pn.setBackground(Color.LIGHT_GRAY);
-		ps.setBackground(Color.LIGHT_GRAY);
-		pc.setLayout(new GridLayout(4, 4, 5, 5));
-
-		JLabel label1 = new JLabel("수식입력");
-		tf1 = new JTextField(10);
-		pn.add(label1);
-		pn.add(tf1);
-
-		JLabel label2 = new JLabel("계산결과");
-		tf2 = new JTextField(10);
-		ps.add(label2);
-		ps.add(tf2);
-
-		for (int i = 0; i < 16; i++) {
-			JButton b = new JButton();
-			if (i < 10) {
-				b.setText(i + ""); // 문자열. Integer.toString(i);
-				b.setBackground(Color.WHITE); // 0~10까지
-			} else {
-				b.setText(str[i - 10]); // ce, 계산
-				b.setBackground(Color.WHITE);
-			}
-			if (i > 11)
-				b.setBackground(Color.WHITE); // 연산기호
-			pc.add(b);
-			b.addActionListener(this);
+	class NorthPanel extends JPanel{
+		public NorthPanel() {
+			setBackground(Color.LIGHT_GRAY);
+		//	setLayout(new FlowLayout());
+			add(new JButton("Open"));
+			add(new JButton("Close"));
+			add(new JButton("Exit"));
 		}
-		c.add(pc);
-		c.add(pn, BorderLayout.NORTH);
-		c.add(ps, BorderLayout.SOUTH);
-		setVisible(true);
 	}
+	class CenterPanel extends JPanel{
+		public CenterPanel() {
+			setLayout(null);
+			for (int i = 0; i < 20; i++) {
+				int x = (int)(Math.random()*250);
+				int y = (int)(Math.random()*250);
+				JLabel label=new JLabel("*");
+                label.setForeground(Color.GREEN);
+				label.setLocation(x,y);
+				label.setSize(20, 20);
+				label.setOpaque(true);
+				add(label);
+				}
+		}
+	}
+	class SouthPanel extends JPanel{
+			public SouthPanel() {
+			setBackground(Color.YELLOW);
+			add(new JButton("Integer Input"));
+			add(new TextField(15));
+		}
+	}
+	
+public class Chapter09Num08 extends JFrame{
+		Chapter09Num08(){
+			setTitle("여러 개의 패널을 가진 프레임");
+			setSize(300, 300);
+			setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+			
+	NorthPanel nP=new NorthPanel();
+    CenterPanel nC=new CenterPanel();
+	SouthPanel nS=new SouthPanel();
+	add(nP, BorderLayout.NORTH);
+	add(nS, BorderLayout.SOUTH);
+	add(nC);
+	setVisible(true);
+	}	
 
 	public static void main(String[] args) {
 		new Chapter09Num08();
 	}
-	@Override
-	public void actionPerformed(ActionEvent e) {
-		String str=e.getActionCommand();
-		
-		if(str.equals("CE")) {
-			numStr="";
-			tf1.setText(numStr);
-			tf2.setText("");
-		}else if(str.equals("계산")) {
-			StringTokenizer st=new StringTokenizer(numStr, "+-x%", true);
-			int num1=Integer.parseInt(st.nextToken());
-			String op=st.nextToken();
-			int num2=Integer.parseInt(st.nextToken());
-			switch(op) {
-			case "+" : tf2.setText(num1+num2+""); break;
-			case "-" : tf2.setText(num1-num2+""); break;
-			case "x" : tf2.setText(num1*num2+""); break;
-			case "%" : tf2.setText(num1/num2+""); break;
-				default: tf2.setText("오류"); break;
-			}
-			numStr="";
-			tf1.setText(numStr);
-		}else {
-			numStr+=str;
-			tf1.setText(numStr);
-					}
-		}
 }
